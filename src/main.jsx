@@ -5,10 +5,10 @@ import { Text } from "./Text.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Text />
-    <Text />
-    <Text />
-    <Text />
-    <Text />
+    <Text msg={"React"} />
+    <Text msg={"Js"} />
+    <Text msg={"HTML"} />
+    <Text msg={"CSS"} />
+    <Text msg={"JavaScript"} />
   </StrictMode>
 );

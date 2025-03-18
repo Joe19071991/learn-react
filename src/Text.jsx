@@ -1,5 +1,4 @@
-export const Text = () => {
-  const msg = "React";
+export const Text = ({ msg }) => {
   return (
     <div>
       <h1>Je code avec {msg}</h1>
