@@ -15,7 +15,7 @@ export const List = () => {
       <ol>
         {todos.map((todo) => (
           <li key={todo.id}>
-            <p>{todo.title}</p>
+            <p>{todo.title + " => " + todo.completed}</p>
           </li>
         ))}
       </ol>
