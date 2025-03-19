@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../App.css";
 import TodoItem from "./TodoItem";
 
@@ -10,6 +10,12 @@ export const List = () => {
     const data = await result.json();
     setTodos(data);
   };
+  // hooks useEffect dès que le composant sera chargé il exécutera ce qu'il y a dans le useEffect
+
+  useEffect(() => {
+    fetchList();
+  }, []);
+
   return (
     <div>
       <button onClick={() => fetchList()}>Fetch</button>
