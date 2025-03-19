@@ -12,9 +12,13 @@ export const List = () => {
   return (
     <div>
       <button onClick={() => fetchList()}>Fetch</button>
-      {todos.map((todo) => (
-        <p key={todo.id}>{todo.title}</p>
-      ))}
+      <ol>
+        {todos.map((todo) => (
+          <li key={todo.id}>
+            <p>{todo.title}</p>
+          </li>
+        ))}
+      </ol>
     </div>
   );
 };
